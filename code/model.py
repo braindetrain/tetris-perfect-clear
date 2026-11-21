@@ -24,6 +24,8 @@ model = DecisionTreeClassifier(max_depth=5, random_state=42)
 model.fit(X_train, y_train)
 predictions = model.predict(X_test)
 
+print(f"Train accuracy: {model.score(X_train, y_train):.4f}")
+
 # Performance metric: accuracy, compared with a majority-class baseline
 accuracy = accuracy_score(y_test, predictions)
 baseline = y_test.value_counts(normalize=True).max()
