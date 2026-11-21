@@ -1,3 +1,4 @@
 metric,value
-tree_accuracy,0.8393
+tree_accuracy,0.8452
 majority_baseline,0.8452
+cv_accuracy,0.875
