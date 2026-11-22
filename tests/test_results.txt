@@ -1,0 +1,36 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.16, pytest-9.2.0, pluggy-1.7.0 -- /home/ugrads/majors/briant07/CS2104/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/ugrads/majors/briant07/CS2104/tetris-perfect-clear
+plugins: platformdirs-4.14.5
+collecting ... collected 27 items
+
+tests/test_analysis.py::test_dataset PASSED                              [  3%]
+tests/test_data_and_model.py::test_shape_and_columns PASSED              [  7%]
+tests/test_data_and_model.py::test_no_missing_values PASSED              [ 11%]
+tests/test_data_and_model.py::test_no_duplicate_sequences PASSED         [ 14%]
+tests/test_data_and_model.py::test_piece_labels_are_valid PASSED         [ 18%]
+tests/test_data_and_model.py::test_each_sequence_has_four_distinct_pieces PASSED [ 22%]
+tests/test_data_and_model.py::test_success_label_is_binary PASSED        [ 25%]
+tests/test_data_and_model.py::test_success_counts_match_source PASSED    [ 29%]
+tests/test_data_and_model.py::test_each_piece_appears_equally_often_per_position[piece_1] PASSED [ 33%]
+tests/test_data_and_model.py::test_each_piece_appears_equally_often_per_position[piece_2] PASSED [ 37%]
+tests/test_data_and_model.py::test_each_piece_appears_equally_often_per_position[piece_3] PASSED [ 40%]
+tests/test_data_and_model.py::test_each_piece_appears_equally_often_per_position[piece_4] PASSED [ 44%]
+tests/test_data_and_model.py::test_model_script_runs_without_error PASSED [ 48%]
+tests/test_data_and_model.py::test_metrics_are_valid_proportions[tree_accuracy] PASSED [ 51%]
+tests/test_data_and_model.py::test_metrics_are_valid_proportions[majority_baseline] PASSED [ 55%]
+tests/test_data_and_model.py::test_metrics_are_valid_proportions[cv_accuracy] PASSED [ 59%]
+tests/test_data_and_model.py::test_model_is_better_than_a_coin_flip PASSED [ 62%]
+tests/test_data_and_model.py::test_expected_output_files_exist[docs/tables/success_counts.csv] PASSED [ 66%]
+tests/test_data_and_model.py::test_expected_output_files_exist[docs/tables/success_by_piece_and_position.csv] PASSED [ 70%]
+tests/test_data_and_model.py::test_expected_output_files_exist[docs/tables/success_rate_piece1_piece2.csv] PASSED [ 74%]
+tests/test_data_and_model.py::test_expected_output_files_exist[docs/tables/model_metrics.csv] PASSED [ 77%]
+tests/test_data_and_model.py::test_expected_output_files_exist[docs/tables/feature_importance.csv] PASSED [ 81%]
+tests/test_data_and_model.py::test_expected_output_files_exist[docs/figures/success_counts.png] PASSED [ 85%]
+tests/test_data_and_model.py::test_expected_output_files_exist[docs/figures/success_rate_by_piece_position.png] PASSED [ 88%]
+tests/test_data_and_model.py::test_expected_output_files_exist[docs/figures/success_rate_heatmap.png] PASSED [ 92%]
+tests/test_data_and_model.py::test_expected_output_files_exist[docs/figures/confusion_matrix.png] PASSED [ 96%]
+tests/test_data_and_model.py::test_expected_output_files_exist[docs/figures/feature_importance.png] PASSED [100%]
+
+============================== 27 passed in 2.28s ==============================
